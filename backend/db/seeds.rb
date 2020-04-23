@@ -12,3 +12,9 @@
 #     {name: "Peet's Coffee: Major Dickason's Blend", bean: "Arabica", description: "Dark roast. Full-bodied, spicy and complex."},
 #     {name: "Len's Coffee", bean: "Liberica", description: "Light/Medium Roast. Floral, fruity aroma and a slightly smoky taste."}
 # ])
+
+Origin.create([
+    {region: "Latin America", country: "Peru", description: "Almost all beans are arabica. Low to high altitudes produce coffee with mild to bright acidity levels. Typically floral aromas, rich sweetness and fruit."},
+    {region: "Latin America", country: "Various", description: "Mostly arabica beans are cultivated here. They range in flavor profiles from clean and less acidic to complex and fruity."},
+    {region: "South East Asia", country: "Philippines", description: "Various beans are produced here, but the rare Liberica beans are cultivated. Dense, smoky, chocolaty, fruity. Aroma of aniseed."}
+])
