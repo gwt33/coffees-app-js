@@ -5,12 +5,12 @@ class CoffeesController < ApplicationController
   def index
     @coffees = Coffee.all
 
-    render json: @coffees
+    render json: @coffees, include: :origins
   end
 
   # GET /coffees/1
   def show
-    render json: @coffee
+    render json: @coffee, include: :origins
   end
 
   # POST /coffees
