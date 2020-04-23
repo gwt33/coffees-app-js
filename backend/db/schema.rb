@@ -10,11 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_23_050320) do
+ActiveRecord::Schema.define(version: 2020_04_23_161615) do
 
   create_table "coffees", force: :cascade do |t|
     t.string "name"
     t.string "bean"
+    t.string "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "origins", force: :cascade do |t|
+    t.string "region"
+    t.string "country"
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
